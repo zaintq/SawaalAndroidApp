@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/opt_grey_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fnum" android:text=""
+            android:layout_width="match_parent" android:layout_height="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/qplaybutton"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp" android:text=""
+                android:padding="18dip" android:background="@drawable/ic_qplay_dark"/>
+            <TextView
+                android:id="@+id/opt1rec" android:text="#1"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="18dip"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/opt2rec" android:text="#2"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="18dip"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/opt3rec" android:text="#3"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="18dip"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/opt4rec" android:text="#4"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="18dip"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/no_rank"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/nothing_here"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

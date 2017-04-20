@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5454</color>
+    <color name="colorPrimaryDark">#ff3632</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="white">#ffffff</color>
+    <color name="play_red">#cc0000</color>
+    <color name="opt_grey_dark">#4d4d4d</color>
+    <color name="opt_grey_light">#dcdcdc</color>
+    <color name="light_black">#504f4f</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0737d4</color>
+    <color name="urdu_logo_background">#ff5454</color>
+    <color name="background_light">#ffffff</color>
+    <color name="transparent">#00000000</color>
+</resources>

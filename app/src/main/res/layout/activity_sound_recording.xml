@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RecordingViewSwitcher"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:background="@color/opt_grey_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/btnStart"
+            android:layout_width="80dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/rec_mic"/>
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/btnStop"
+            android:layout_width="80dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/rec_stop"/>
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/btnPlay"
+            android:layout_width="80dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/rec_play"/>
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/opt4recpause"
+            android:layout_width="80dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/btnSave"
+            android:layout_width="80dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:clickable="false"
+            android:src="@drawable/rec_save"/>
+
+        <ImageButton
+            android:layout_gravity="center|center_vertical"
+            android:id="@+id/dummy"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="false"/>
+
+        <ImageButton
+            android:id="@+id/rec_success"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fwd_okay"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/rec_error"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fwd_error"
+            android:visibility="gone"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="gone"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            android:layout_centerHorizontal="true"
+            app:indicatorColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

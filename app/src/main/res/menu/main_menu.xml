@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/new_questions"
+        android:title="New Questions" />
+
+    <item android:id="@+id/revisit_questions"
+        android:title="Revisit Questions" />
+
+    <item android:id="@+id/friend_questions"
+        android:title="Friends" />
+
+    <item android:id="@+id/user_profile"
+        android:title="Profile" />
+
+    <item android:id="@+id/question_rankings"
+        android:title="QRanks" />
+
+    <item android:id="@+id/answer_rankings"
+        android:title="ARanks" />
+
+    <item android:id="@+id/post_question"
+        android:title="Post Question" />
+</menu>

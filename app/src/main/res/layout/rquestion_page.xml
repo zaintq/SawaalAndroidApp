@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/background_light">
+
+    <HorizontalScrollView
+        android:id="@+id/pagination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light">
+        <LinearLayout
+            android:id="@+id/btnLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="2dp"/>
+
+    <TextView
+        android:id="@+id/no_comments"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/nothing_here"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

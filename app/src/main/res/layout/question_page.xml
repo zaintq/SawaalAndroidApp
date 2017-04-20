@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="6dp"
+    android:weightSum="2"
+    android:background="@color/background_light">
+
+    <TableLayout
+        android:id="@+id/qtable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"  android:stretchColumns="*">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/qplaybutton"
+                android:contentDescription="Play Question"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp" android:text="" android:layout_span="1"
+                android:padding="18dip" android:background="@drawable/ic_qplay_light"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18sp" android:text="@string/text_sawaal"  android:layout_span="2"
+                android:padding="18dip"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/qOptPlayButtons"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:id="@+id/opt1rec" android:text="@string/text_jawaab_1"
+                android:layout_weight="1" android:background="@color/opt_grey_light"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="20dip" android:gravity="center"/>
+            <TextView
+                android:id="@+id/opt2rec" android:text="@string/text_jawaab_2"
+                android:layout_weight="1" android:background="@color/opt_grey_light"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="20dip" android:gravity="center"/>
+            <TextView
+                android:id="@+id/opt3rec" android:text="@string/text_jawaab_3"
+                android:layout_weight="1" android:background="@color/opt_grey_light"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="20dip" android:gravity="center"/>
+            <TextView
+                android:id="@+id/opt4rec" android:text="@string/text_jawaab_4"
+                android:layout_weight="1" android:background="@color/opt_grey_light"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="20dip" android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/qoptions"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="6dp">
+            <RadioButton
+                android:id="@+id/opt1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/opt2"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/opt3"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/opt4"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+        </TableRow>
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/submit_answer" android:text="@string/submit_answer"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_span="4"
+                android:background="@drawable/rect_shape" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/qbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qtable"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/next_question"/>
+
+            <Button
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/like"/>
+            <Button
+                android:id="@+id/dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/dislike"/>
+            <Button
+                android:id="@+id/report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/report"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rect_shape"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/forward"/>
+            <Button
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/new_comment"/>
+            <Button
+                android:id="@+id/user_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:theme="@style/MyButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="@string/user_comments"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

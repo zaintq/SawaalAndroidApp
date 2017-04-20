@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RecordingViewSwitcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:id="@+id/qrec_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/qrec_prompt"
+            android:layout_width="match_parent" android:layout_height="28sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/qrec_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/opt_grey_light">
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/qrecstart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/rec_mic"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/qrecstop"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/qrecplay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_play"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/qrecpause"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/qrecsave"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_save"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@id/qrec_container"
+        android:visibility="visible">
+
+        <TextView
+            android:text="@string/rec_options_ur"
+            android:layout_width="match_parent" android:layout_height="28sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/opt1_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/opt_grey_light">
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt1recstart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_mic"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt1recstop"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt1recplay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_play"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt1recpause"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt1recsave"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_save"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/opt2_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/opt_grey_light">
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt2recstart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_mic"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt2recstop"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt2recplay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_play"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt2recpause"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt2recsave"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_save"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/opt3_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/opt_grey_light">
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt3recstart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_mic"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt3recstop"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt3recplay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_play"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt3recpause"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt3recsave"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_save"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/opt4_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/opt_grey_light">
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt4recstart"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_mic"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt4recstop"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt4recplay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_play"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt4recpause"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_pause" android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_gravity="center|center_vertical"
+                android:id="@+id/opt4recsave"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_save"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opt_num_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/qrec_container">
+
+        <TextView
+            android:text="@string/rec_options_ur"
+            android:layout_width="match_parent" android:layout_height="28sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/rec_options_ur"
+                android:src="@drawable/rec_opt_num"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="#1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/rec_options_ur"
+                android:src="@drawable/rec_opt_num"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="#2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/rec_options_ur"
+                android:src="@drawable/rec_opt_num"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="#3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/rec_options_ur"
+                android:src="@drawable/rec_opt_num"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="#4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@id/opt_container">
+
+        <TextView
+            android:text="@string/rec_correct_opt_ur"
+            android:layout_width="match_parent" android:layout_height="28sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:background="@color/opt_grey_light">
+
+            <RadioButton
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"
+                android:id="@+id/opt1"
+                android:layout_weight="1"
+                android:text="#1"
+                android:checked="false" />
+            <RadioButton
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"
+                android:id="@+id/opt2"
+                android:layout_weight="1"
+                android:text="#2"
+                android:checked="false" />
+            <RadioButton
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"
+                android:id="@+id/opt3"
+                android:layout_weight="1"
+                android:text="#3"
+                android:checked="false" />
+            <RadioButton
+                android:layout_gravity="center|center_vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@drawable/rec_stop"
+                android:id="@+id/opt4"
+                android:layout_weight="1"
+                android:text="#4"
+                android:checked="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit" android:text="@string/rec_submit_ur"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/rect_shape"
+        android:layout_below="@id/copt_container" />
+
+    <ImageButton
+        android:id="@+id/rec_success"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fwd_okay"
+        android:visibility="gone"
+        android:layout_below="@id/submit"/>
+
+    <ImageButton
+        android:id="@+id/rec_error"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fwd_error"
+        android:visibility="gone"
+        android:layout_below="@id/submit"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        android:layout_centerHorizontal="true"
+        app:indicatorColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/submit"/>
+
+</RelativeLayout>

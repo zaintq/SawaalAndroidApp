@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/comment_item"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/opt_grey_light">
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content" android:layout_weight="5" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="0"
+            android:padding="18dip"
+            android:textColor="@color/opt_grey_dark"/>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content" android:layout_weight="5" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="0"
+            android:padding="18dip"
+            android:textColor="@color/opt_grey_dark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:padding="18dip" android:textSize="18sp" android:background="@drawable/ic_qplay_dark"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
